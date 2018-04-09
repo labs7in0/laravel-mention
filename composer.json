@@ -1,0 +1,60 @@
+{
+    "name": "labs7in0/laravel-mention",
+    "description": "A package to parse a @mention from a text and mention the user with a notification.",
+    "keywords": [
+        "laravel",
+        "laravel-5-package",
+        "mentions",
+        "users",
+        "notifications"
+    ],
+    "homepage": "https://github.com/labs7in0/laravel-mention",
+    "support": {
+        "source": "https://github.com/labs7in0/laravel-mention",
+        "issues": "https://github.com/labs7in0/laravel-mention/issues"
+    },
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+            "name": "dongm2ez",
+            "email": "dongm2ez@gmail.com"
+        },
+        {
+            "name": "Xety",
+            "email": "emeric@xeta.io",
+            "homepage": "https://github.com/Xety"
+        },
+        {
+            "name": "kinosang",
+            "email": "me@7in0.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "laravel/framework": "~5"
+    },
+    "require-dev": {
+        "laravel/laravel": "~5",
+        "phpunit/phpunit": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Labs7in0\\Mention\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Labs7in0\\Mention\\ServiceProvider"
+            ],
+            "aliases": {
+                "Mention": "Labs7in0\\Mention\\Facade"
+            }
+        }
+    }
+}
